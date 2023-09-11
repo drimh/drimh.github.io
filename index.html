@@ -29,7 +29,7 @@
             <img class="header__logo__img" src="images/snowBall.png" alt="logo"/>
             <h1 class="header__logo__title"><a href="#">drimh</a></h1>
         </div>
-        <nav>
+        <nav class="header__nav">
             <ul class="header__menu">
                 <li><a class="header__menu__item active" href="#home">Home</a></li>
                 <li><a class="header__menu__item" href="#about">About</a></li>
@@ -216,57 +216,59 @@
            </div>
         </section>
         <!-- Testimonials -->
-        <section id="testimonial" class="section">
+        <section id="testimonial" class="section max-container">
             <h2 class="title">Testimonial</h2>
             <p class="description">See what they say about me</p>
-            <ul>
-                <li>
-                    <img src="images/portfolio-other-images/testimonials/people1.webp" alt="people1">
-                    <div>
+            <ul class="testimonials">
+                <li class="testimonial">
+                    <img src="images/portfolio-other-images/testimonials/people1.webp" alt="people1" class="testimonial__img"/>
+                    <div class="testimonial__bubble">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero magnam error sed maxime eveniet quia. Cumque dicta totam alias sequi amet aliquid ad quam numquam rem, ab reiciendis eligendi eaque?</p>
-                        <p><a href="#">James Kim</a> /Google</p>
+                        <p><a href="#" class="testinomial__bubble__name">James Kim</a> /Google</p>
                     </div>
                 </li>
-                <li>
-                    <img src="images/portfolio-other-images/testimonials/people2.webp" alt="people2">
-                    <div>
+                <li class="testimonial">
+                    <img src="images/portfolio-other-images/testimonials/people2.webp" alt="people2" class="testimonial__img"/>
+                    <div class="testimonial__bubble">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, vel magnam labore perferendis officia molestiae nam enim mollitia iusto cumque beatae placeat qui ex possimus perspiciatis sit error ab voluptatem!</p>
-                        <p><a href="#">Anna Jin</a> /Samsung</p>
+                        <p><a href="#" class="testinomial__bubble__name">Anna Jin</a> /Samsung</p>
                     </div>
                 </li>
-                <li>
-                    <img src="images/portfolio-other-images/testimonials/people3.webp" alt="people3">
-                    <div>
+                <li class="testimonial">
+                    <img src="images/portfolio-other-images/testimonials/people3.webp" alt="people3" class="testimonial__img"/>
+                    <div class="testimonial__bubble">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa reprehenderit, cupiditate, vitae nobis iste error, sed quia illum odit aspernatur ratione ducimus impedit. Maxime, recusandae officiis. Odio molestias veritatis neque.</p>
-                        <p><a href="#">Anna Jin</a> /Samsung</p>
+                        <p><a href="#" class="testinomial__bubble__name">Anna Jin</a> /Samsung</p>
                     </div>
                 </li>
             </ul>
         </section>
         <!-- Arrow up -->
         <aside>
-            <a href="#home" title="back to top">
+            <a href="#home" title="back to top" class="arrow-up">
                 <i class="fa-solid fa-arrow-up"></i>
             </a>
         </aside>
     </main>
     <!-- Footer -->
     <footer id="contact" class="section">
+       <div class="max-container">
         <h2 class="title">Let&#39;s talk</h2>
         <p class="description">sjw07099@gmail.com</p>
-        <ul>
+        <ul class="contact__links">
             <li>
-                <a href="#" target="_blank" title="my github link">
+                <a href="#" target="_blank" title="my github link" class="contact__link">
                     <i class="fa-brands fa-github"></i>
                 </a>
             </li>
             <li>
-                <a href="#" target="_blank" title="my github link">
+                <a href="#" target="_blank" title="my github link" class="contact__link">
                     <i class="fa-brands fa-github" title="my github link"></i>
                 </a>
             </li>
         </ul>
         <p>저작권</p>
+       </div>
     </footer>
 </body>
 </html>
