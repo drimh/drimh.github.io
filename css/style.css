@@ -9,8 +9,8 @@
 
     /* Colors */
     --color-white: #ffffff;
-    --color-black: #050a13;
-    --color-blue: #03e8f9;
+    --color-black: #1b1c1f;
+    --color-blue: #d9d2fa;
     --color-orange: #fd6413;
     --color-gray: #1b1e26;
 
@@ -98,6 +98,7 @@ button:focus{
 }
 
 .header__logo__img{ 
+    border-radius: 100%;
     width: 36px;
     height: 36px;
 }
@@ -162,7 +163,12 @@ button:focus{
 }
 
 .home__description{ 
-    font-size: 1.3rem;
+    font-size: 1rem;
+    margin: 0.9rem;
+}
+
+.home__description strong{ 
+    color: var(--color-accent);
 }
 
 .home__contact{ 
@@ -182,20 +188,25 @@ button:focus{
 }
 
 /* About */
+.about title{ 
+    font-weight: bolder;
+}
+
 .majors{ 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 1rem;
     margin: 2.5rem 0;
 }
 
 .major{ 
+    width: 200px;
     background-color: var(--color-primary-variant);
     padding: 2rem 1rem;
     color: var(--color-text);
     border-radius: 1rem;
     cursor: default;
-    box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.38);
+    box-shadow: 4px 8px 8px rgba(141, 18, 229, 0.38);
 }
 
 .major__icon{ 
@@ -247,7 +258,7 @@ button:focus{
     margin: 2rem 3rem;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12)
+    box-shadow: var(--color-accent) 0px 0px 16px;
 }
 
 .skills__title{ 
@@ -297,7 +308,6 @@ button:focus{
 
 /* Work */
 #work{ 
-    background-color: var(--color-primary);
     color: var(--color-text);
 }
 
@@ -310,7 +320,6 @@ button:focus{
 
 .category{ 
     position: relative;
-    color: var(--color-text);
     font-size: 1.1rem;
     padding: 0.5rem 3rem;
     border-radius: 4px;
@@ -321,7 +330,6 @@ button:focus{
 
 .category__selected{ 
     background-color: var(--color-accent);
-    color: var(--color-primary);
 }
 
 .category__count{ 
@@ -346,8 +354,7 @@ button:focus{
 
 .projects{ 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
 

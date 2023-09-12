@@ -14,12 +14,14 @@ categories.addEventListener('click', (event) => {
 });
 
 function handleActiveSelection(target) {
+    //Active 메뉴를 재설정
   const active = document.querySelector('.category--selected');
   active.classList.remove('category--selected');
   target.classList.add('category--selected');
 }
 
 function filterProjects(filter) {
+    //프로젝트 필터링
   projects.forEach((project) => {
     if (filter === 'all' || filter === project.dataset.type) {
       project.style.display = 'block';
